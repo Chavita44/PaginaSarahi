@@ -1,0 +1,167 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Mis Tareas de Matemáticas</title>
+    </head>
+    <body>
+
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        :root {
+        --bg-dark: #121212;
+        --surface: #1e1e1e;
+        --text: #e0e0e0;
+        --accent: #ffca28;
+        }
+
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+        body {
+        font-family: 'Poppins', sans-serif;
+        background: var(--bg-dark);
+        color: var(--text);
+        line-height: 1.5;
+        }
+
+        header {
+        background: var(--surface);
+        color: var(--accent);
+        text-align: center;
+        padding: 2rem 1rem;
+        }
+
+        header h1 {
+        font-weight: 600;
+        font-size: 2.5rem;
+        }
+
+        header p {
+        font-weight: 400;
+        opacity: 0.8;
+        }
+
+        .tareas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        .tarea {
+        background: var(--surface);
+        padding: 1.25rem;
+        border-radius: 8px;
+        transition: background 0.2s, transform 0.2s;
+        }
+
+        .tarea:hover {
+        background: #2a2a2a;
+        transform: translateY(-4px);
+        }
+
+        .tarea img,
+        .tarea video {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        }
+
+        .tarea h2 {
+        font-size: 1.25rem;
+        color: var(--accent);
+        margin-bottom: 0.5rem;
+        }
+
+        .tarea p {
+        font-size: 0.9rem;
+        color: var(--text);
+        }
+
+        footer {
+        background: var(--surface);
+        color: var(--accent);
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #2a2a2a;
+        }
+
+        /* Contenedor de varias imágenes */
+        .tarea .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        }
+
+        .tarea .galeria img {
+        width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+        }
+
+        /* Contenedor de video + imagen */
+        .tarea .media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        }
+
+        .tarea .media video,
+        .tarea .media img {
+        width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+        }
+    </style>
+
+    <header>
+        <h1>Aplicacion Matemática</h1>
+        <p>Portafolio de actividades realizadas</p>
+    </header>
+
+    <section class="tareas">
+    <!-- Tarea con galería de imágenes -->
+    <div class="tarea">
+        <div class="galeria">
+        <img src="/Img/Trs.png" alt="Paso 1">
+        </div>
+        <h2>✏ Tarea 1: Sube y baja</h2>
+        <p>No se realizó este trabajo.</p>
+    </div>
+
+    <!-- Otra tarea con galería -->
+    <div class="tarea">
+        <div class="galeria">
+        <img src="/Img/Foto4.png" alt="Figura A">
+        <img src="/Img/FT1.png" alt="Figura B">
+        <img src="/Img/FT12.PNG" alt="Figura C">
+        </div>
+        <h2>📐 Tarea 2: Actividad de palanca</h2>
+        <p>Construí las figuras usando regla y compás. luego comprobé áreas y perímetros con fórmulas.</p>
+    </div>
+
+    <!-- Tarea con video + imagen -->
+    <div class="tarea">
+        <div class="media">
+        <video controls>
+            <source src="/MP4/Vd1.mp4" type="video/mp4">
+            Tu navegador no soporta este formato.
+        </video>
+        <img src="/Img/Foto3.png" alt="Miniatura del video">
+        </div>
+        <h2>🎥 Tarea 3: Cambio de llanta</h2>
+        <p>Grabé un video cambiando una refacción de una llanta.</p>
+    </div>
+    </section>
+
+    </body>
+    </html>
